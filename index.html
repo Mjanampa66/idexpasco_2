@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reto: Cambia el estilo</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    #mensaje {
+      color: black;
+      font-size: 24px;
+      transition: all 0.5s ease;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 30px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="mensaje">¡Bienvenido a la magia del estilo!</h1>
+  <button onclick="cambiarEstilo()">Haz clic para cambiar el estilo</button>
+
+  <script>
+    function cambiarEstilo() {
+      // Cambiar el color de fondo del body
+      document.body.style.backgroundColor = "#ffe4e1";
+
+      // Cambiar el color y tamaño del texto
+      let mensaje = document.getElementById("mensaje");
+      mensaje.style.color = "darkred";
+      mensaje.style.fontSize = "32px";
+      mensaje.textContent = "¡El estilo ha cambiado con JavaScript!";
+    }
+  </script>
+
+</body>
+</html>
